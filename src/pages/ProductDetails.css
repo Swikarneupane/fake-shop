@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
+
+.inside-container {
+  padding-top: 30px;
+}
+
+.inside-image {
+  object-fit: contain;
+  width: 400px;
+  height: 300px;
+  /* object-position: 0px; */
+  /* object-position: bottom; */
+}
+
+.inside-title {
+  font-family: "Inter";
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.inside-desc {
+  padding: 10px;
+  font-family: "Montserrat";
+  font-size: 20px;
+}

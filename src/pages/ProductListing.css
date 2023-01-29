@@ -1,0 +1,69 @@
+.card h3 {
+  margin: 20px 0px;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 20px;
+}
+.card-cover {
+  min-height: 90vh;
+  gap: 1rem;
+  padding: 7px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  border: 2px solid black;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 30px;
+  font-family: "Roboto";
+  letter-spacing: 2px;
+  text-align: center;
+  color: black;
+}
+.card-desc {
+  font-size: 20px;
+  font-family: "Montserrat";
+  text-align: left;
+  height: 140px;
+  overflow-y: hidden;
+  color: black;
+}
+
+img {
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 10px;
+}
+.read-more {
+  background-color: #2dbab1;
+  text-align: left;
+  /* padding: 10px; */
+  height: 40px;
+  border-radius: 7px;
+  border: 0px solid white;
+  width: 50%;
+  font-size: 18px;
+  font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  text-align: center;
+}
+.read-more:hover {
+  scale: 1.01;
+  transition: all ease 0.25s;
+}

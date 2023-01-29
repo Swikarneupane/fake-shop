@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap");
+
+.header {
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Poppins";
+  min-height: 20vh;
+  max-height: 20vh;
+  position: sticky;
+}
+.add-btn {
+  padding: 10px;
+  font-family: "Poppins";
+  background-color: #2dbab1;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
