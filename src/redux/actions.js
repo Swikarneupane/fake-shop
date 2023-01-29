@@ -1,5 +1,7 @@
 export const SET_PRODUCTS = "SET_PRODUCTS"
+export const ADD_PRODUCTS = "ADD_PRODUCTS"
 export const SELECTED_PRODUCTS = "SELECTED_PRODUCTS"
+
 
 export const setProducts = (product) => {
   return {
@@ -7,6 +9,13 @@ export const setProducts = (product) => {
     payload: product,
   }
 }
+export const addProducts = (product) => {
+  return {
+    type: ADD_PRODUCTS,
+    payload: product,
+  }
+}
+
 export const selectedProducts = (id, product) => {
   return {
     type: SELECTED_PRODUCTS,
