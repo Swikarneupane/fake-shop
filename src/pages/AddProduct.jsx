@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useDispatch } from "react-redux"
-import { setProducts } from "../redux/actions"
+import { addProducts } from "../redux/actions"
 
 export default function Header() {
   const [title, setTitle] = useState("")
@@ -9,7 +9,8 @@ export default function Header() {
   const dispatch = useDispatch()
 
   function submitHandler() {
-    dispatch(setProducts({ title, price, category }))
+    const _id = new Date();
+    dispatch(addProducts({_id, title, price, category }))
     console.log(title)
     console.log(price)
     console.log(category)

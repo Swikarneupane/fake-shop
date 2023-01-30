@@ -6,6 +6,7 @@ import { setProducts } from "../redux/actions"
 import "./ProductListing.css"
 
 export default function ProductListing() {
+  const dispatch = useDispatch()
   const fetchObjects = async () => {
     const response = await axios.get("https://api.storerestapi.com/products")
     // console.log(response.data.data)
@@ -13,11 +14,10 @@ export default function ProductListing() {
   }
   const things = useSelector((state) => state.products)
   // console.log(things)
-  const dispatch = useDispatch()
 
   useEffect(() => {
     fetchObjects()
-  })
+  },[])
 
   return (
     <div className={`card-cover`}>
@@ -29,7 +29,7 @@ export default function ProductListing() {
             <Link
               to={`/products/${item._id}`}
               style={{ textDecoration: "none", color: "white" }}
-              state={item}>
+              >
               Read More
             </Link>
           </button>
