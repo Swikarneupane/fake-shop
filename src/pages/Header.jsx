@@ -4,7 +4,11 @@ import { Link } from "react-router-dom"
 export default function Header() {
   return (
     <div className="header">
-      <Link to="/">Welcome to Fake Shop</Link>
+      <div className="welcome-text">
+        <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+          Welcome to Fake Shop
+        </Link>
+      </div>
       <Link to="/addproduct">
         <button className="add-btn">
           <svg

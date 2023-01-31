@@ -11,13 +11,38 @@
   min-height: 20vh;
   max-height: 20vh;
   position: sticky;
+  background-color: #2dbab1;
+  color: white;
+  margin-bottom: 40px;
 }
 .add-btn {
-  padding: 10px;
+  padding: 10px 20px;
   font-family: "Poppins";
-  background-color: #2dbab1;
+  background-color: white;
   border-radius: 5px;
-  color: white;
-  border: none;
+  color: #2dbab1;
   cursor: pointer;
+  border: 3px solid #2dbab1;
+  border-radius: 10px;
+}
+.add-btn:hover {
+  background-color: #2dbab1;
+  color: white;
+  scale: 120%;
+  border: 3px solid white;
+}
+
+@media (max-width: 800px) {
+  .welcome-text {
+    font-size: 25px;
+  }
+  .add-btn {
+    padding: 10 20px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 554px) {
+  .add-btn {
+    display: none;
+  }
 }
