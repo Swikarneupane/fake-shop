@@ -9,13 +9,13 @@ import { useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
 
 function App() {
-  const { products, isLoading } = useSelector((store) => store.product)
+  const { isLoading } = useSelector((store) => store.product)
 
   const dispatch = useDispatch()
 
   useEffect(() => {
     dispatch(getProducts())
-  }, [products])
+  }, []) //for some reasons the page use rendering over and over
 
   if (isLoading) {
     return <h2>Loading...</h2>
