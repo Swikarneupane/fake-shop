@@ -18,15 +18,16 @@ export const productSlice = createSlice({
   initialState,
   reducers: {
     addProduct: (state, action) => {
-      // console.log("it's me")
       const cartItem = action.payload
-      console.log(state)
-      // state.products.push(cartItem)
+      state.products.push(cartItem)
     },
     showProduct: (state, action) => {
-      // console.log(action.payload)
       const product = state.products.find((item) => item.id === action.payload)
       return product
+    },
+    removeProduct: (state, action) => {
+      const productId = action.payload
+      state.products = state.products.filter((item) => item.id !== productId)
     },
   },
   extraReducers: {
@@ -45,4 +46,4 @@ export const productSlice = createSlice({
 
 export default productSlice.reducer
 
-export const { addProduct, showProduct } = productSlice.actions
+export const { addProduct, showProduct, removeProduct } = productSlice.actions
