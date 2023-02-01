@@ -79,6 +79,20 @@ img {
   font-size: 50px;
   text-decoration: underline;
 }
+.delete-btn {
+  background-color: #2dbab1;
+  color: white;
+  border: 2px solid #2dbab1;
+  font-size: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Montserrat";
+}
+.delete-btn:hover {
+  scale: 1.1;
+  transition: all ease 0.4s;
+}
 
 @media (max-width: 1386px) {
   .product-title {

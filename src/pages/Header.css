@@ -30,6 +30,7 @@
   color: white;
   scale: 120%;
   border: 3px solid white;
+  transition: all ease 0.4s;
 }
 
 @media (max-width: 800px) {

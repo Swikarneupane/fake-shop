@@ -27,7 +27,8 @@ export const productSlice = createSlice({
     },
     removeProduct: (state, action) => {
       const productId = action.payload
-      state.products = state.products.filter((item) => item.id !== productId)
+      state.products = state.products.filter((item) => item._id !== productId)
+      console.log(state.products)
     },
   },
   extraReducers: {

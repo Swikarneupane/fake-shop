@@ -1,10 +1,10 @@
 // import { Link } from "react-router-dom"
 import { useSelector, useDispatch } from "react-redux"
-// import { removeProduct } from "../redux/productSlice"
+import { removeProduct } from "../redux/productSlice"
 import "./ProductListing.css"
 
 export default function ProductListing() {
-  // const dispatch = useDispatch()
+  const dispatch = useDispatch()
   const things = useSelector((store) => store.product.products)
 
   return (
@@ -15,11 +15,11 @@ export default function ProductListing() {
           <div className="card" key={item._id}>
             <h3 className="card-title">{item.title.toUpperCase()}</h3>
             <p className="card-desc">Price: $ {item.price}</p>
-            {/* <button
+            <button
               className="delete-btn"
-              onClick={dispatch(removeProduct(item._id))}>
+              onClick={() => dispatch(removeProduct(item._id))}>
               Remove Item
-            </button> */}
+            </button>
             {/* <button className="read-more">
             <Link
               to={`/products/${item._id}`}
