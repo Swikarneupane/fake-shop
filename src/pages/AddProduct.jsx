@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <div>
-      <h3 className="add-product-title">//This is not complete.</h3>
+      {/* <h3 className="add-product-title">//This is not complete.</h3> */}
       <h3 className="add-product-title">Add your product here.</h3>
       <div className="add-product-desc">
         <input
